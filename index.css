@@ -1,0 +1,19 @@
+body {
+	background-image: url("sky.jpg");
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 80px;
+}
+
+
+.jam {
+        font-size: 4em;
+ 		color: #ffffff;
+        margin-top: 100px;
+        text-align: center;
+        border: 2px solid red;
+  		border-radius: 5px;
+     }

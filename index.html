@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title></title>
+</head>
+<body>
+	<h1>Hai! <br> Welcome! </h1>
+	<div class="jam" ></div>
+	<script type="text/javascript">
+    function jam() {
+    var time = new Date(),
+        hours = time.getHours(),
+        minutes = time.getMinutes(),
+        seconds = time.getSeconds();
+    document.querySelectorAll('.jam')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+      
+    function harold(standIn) {
+        if (standIn < 10) {
+          standIn = '0' + standIn
+        }
+        return standIn;
+        }
+    }
+    setInterval(jam, 1000);
+</script>
+</body>
+</html>
